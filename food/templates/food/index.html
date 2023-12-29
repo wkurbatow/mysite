@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Tamplate</title>
+</head>
+<body>
+    <h1>DB ITEM consists of</h1>
+    <ul>
+    {% for item in item_list %}
+    
+        <li>
+            <h2>{{item.id}} -- {{item.item_name}}</h2>
+            <a href="/food/{{item.id}}">Кликай сюда</a>
+        </li>
+    
+        
+    {% endfor %}
+    </ul>
+    
+</body>
+</html>
