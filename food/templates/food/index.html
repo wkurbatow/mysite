@@ -3,6 +3,26 @@
 
 
     {% block body %}
+    {% for item in item_list %}
+    <div class="row">
+        <div class="col-md-3 offset-md-2">
+            <img class="card" style="width: 18rem;" height="150px" src="{{item.item_image}}" alt="">
+
+        </div>
+        <div class="col-md-4">
+            <h3>{{item.item_name}}</h3>
+            <h5>{{item.item_desc}} </h5>
+            <h6>{{item.item_price}} $</h6>
+        </div>
+        <div class="col-md-2">
+            
+        </div>
+    </div>
+    {% endfor %}
+
+    {% endblock %}
+
+    old cod
    
     <h1>Список продуктов</h1>
     <ul>
@@ -17,6 +37,6 @@
     {% endfor %}
     </ul>
 
-    {% endblock %}
+    
 
  
