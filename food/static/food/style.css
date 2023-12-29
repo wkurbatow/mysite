@@ -1,3 +1,6 @@
 body {
  background-color: lightyellow;
 }
+.navbar-dark a .nav-link {
+    color: red;
+}
